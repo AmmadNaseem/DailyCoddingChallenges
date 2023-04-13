@@ -10,19 +10,17 @@ namespace DailyCoddingChallenges
         static void Main(string[] args)
         {
             Console.WriteLine("************Daily Coding Problems************");
-            Console.WriteLine("Day1: Remove Duplicate Character in a String:");
 
-            Console.Write("Enter String:");
-            string str = Console.ReadLine();
+            Console.WriteLine("Day2: Two strings are anagram to each other:");
 
-            string newStr = StringUtils.RemoveDuplicates(str);
+            Console.Write("Enter First String:");
+            string str1 = Console.ReadLine();
 
-            Console.WriteLine($"Final String is:{newStr}");
+            Console.Write("Enter 2nd String:");
+            string str2 = Console.ReadLine();
 
-            string duplicateChar = StringUtils.PrintDuplicate(str);
 
-            Console.WriteLine($"Duplicated Characters in String is:{duplicateChar}");
-
+            StringUtils.Anagram(str1, str2);
 
         }
     }
