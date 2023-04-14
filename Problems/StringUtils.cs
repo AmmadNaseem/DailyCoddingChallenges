@@ -77,6 +77,35 @@ namespace DailyCoddingChallenges.Problems
 
 
         }
+
+        //================Reverse the string through iteration and recursion===========
+        public static void ReseverseStringthroughIteration(string str)
+        {
+            Console.Write("Reverse String is:");
+            for (int i = str.Length-1; i >=0; i--)
+            {
+                Console.Write(str[i]);
+            }
+
+        }
+        public static string ReverseString(string x)
+        {
+            string result = "";
+            for (int i = x.Length - 1; i >= 0; i--)
+                result += x[i];
+            return result;
+        }
+
+        public static string ReverseStringThroughRecursion(string str,int index)
+        {
+
+            if (index < 0)
+            {
+                return "";
+            }
+            return str[index] + ReverseStringThroughRecursion(str, index - 1);
+
+        }
     }
 
 }

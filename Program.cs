@@ -11,30 +11,46 @@ namespace DailyCoddingChallenges
         {
             Console.WriteLine("************Daily Coding Problems************");
 
-            Console.WriteLine("************Daily Coding Problems************");
-            Console.WriteLine("Day1: Remove Duplicate Character in a String:");
+            ////====================================DAY-1======================================
+            //Console.WriteLine("************Daily Coding Problems************");
+            //Console.WriteLine("Day1: Remove Duplicate Character in a String:");
 
-            Console.Write("Enter String:");
-            string str = Console.ReadLine();
+            //Console.Write("Enter String:");
+            //string str = Console.ReadLine();
 
-            string newStr = StringUtils.RemoveDuplicates(str);
+            //string newStr = StringUtils.RemoveDuplicates(str);
 
-            Console.WriteLine($"Final String is:{newStr}");
+            //Console.WriteLine($"Final String is:{newStr}");
 
-            string duplicateChar = StringUtils.PrintDuplicate(str);
+            //string duplicateChar = StringUtils.PrintDuplicate(str);
 
-            Console.WriteLine($"Duplicated Characters in String is:{duplicateChar}");
+            //Console.WriteLine($"Duplicated Characters in String is:{duplicateChar}");
 
-            Console.WriteLine("Day2: Two strings are anagram to each other:");
+            ////====================================DAY-2======================================
 
-            Console.Write("Enter First String:");
-            string str1 = Console.ReadLine();
+            //Console.WriteLine("Day2: Two strings are anagram to each other:");
 
-            Console.Write("Enter 2nd String:");
-            string str2 = Console.ReadLine();
+            //Console.Write("Enter First String:");
+            //string str1 = Console.ReadLine();
+
+            //Console.Write("Enter 2nd String:");
+            //string str2 = Console.ReadLine();
 
 
-            StringUtils.Anagram(str1, str2);
+            //StringUtils.Anagram(str1, str2);
+
+            //====================================DAY-2======================================
+            Console.WriteLine("Day3: reverse String in C# using Iteration and Recursion:");
+
+            Console.Write("Enter a string:");
+            string str=Console.ReadLine();
+
+            // StringUtils.ReseverseStringthroughIteration(str);
+            int endSring = str.Length - 1;
+
+            Console.WriteLine(StringUtils.ReverseStringThroughRecursion(str, endSring));
+
+
 
         }
     }
